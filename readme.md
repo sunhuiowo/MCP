@@ -12,7 +12,7 @@ MCP_3/
 │   ├── ai_courses_and_specializations/  # AI课程与专业化论文
 │   └── few-shot/           # Few-shot学习论文
 ├── __init__.py             # 包初始化文件
-├── client.py               # MCP客户端实现
+├── client.py               # MCP客户端实现demo
 ├── mcp_chatbot.py          # MCP聊天机器人
 ├── mcp_summary.md          # MCP论文摘要
 ├── readme.md               # 项目说明文档
