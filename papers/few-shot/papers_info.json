@@ -1,0 +1,67 @@
+{
+  "2203.07057v2": {
+    "title": "Self-Promoted Supervision for Few-Shot Transformer",
+    "summary": "The few-shot learning ability of vision transformers (ViTs) is rarely investigated though heavily desired. In this work, we empirically find that with the same few-shot learning frameworks, \\eg~Meta-Baseline, replacing the widely used CNN feature extractor with a ViT model often severely impairs few-shot classification performance. Moreover, our empirical study shows that in the absence of inductive bias, ViTs often learn the low-qualified token dependencies under few-shot learning regime where only a few labeled training data are available, which largely contributes to the above performance degradation. To alleviate this issue, for the first time, we propose a simple yet effective few-shot training framework for ViTs, namely Self-promoted sUpervisioN (SUN). Specifically, besides the conventional global supervision for global semantic learning SUN further pretrains the ViT on the few-shot learning dataset and then uses it to generate individual location-specific supervision for guiding each patch token. This location-specific supervision tells the ViT which patch tokens are similar or dissimilar and thus accelerates token dependency learning. Moreover, it models the local semantics in each patch token to improve the object grounding and recognition capability which helps learn generalizable patterns. To improve the quality of location-specific supervision, we further propose two techniques:~1) background patch filtration to filtrate background patches out and assign them into an extra background class; and 2) spatial-consistent augmentation to introduce sufficient diversity for data augmentation while keeping the accuracy of the generated local supervisions. Experimental results show that SUN using ViTs significantly surpasses other few-shot learning frameworks with ViTs and is the first one that achieves higher performance than those CNN state-of-the-arts.",
+    "authors": [
+      "Bowen Dong",
+      "Pan Zhou",
+      "Shuicheng Yan",
+      "Wangmeng Zuo"
+    ],
+    "published": "2022-03-14",
+    "pdf_url": "https://arxiv.org/pdf/2203.07057v2"
+  },
+  "2206.00092v1": {
+    "title": "FHIST: A Benchmark for Few-shot Classification of Histological Images",
+    "summary": "Few-shot learning has recently attracted wide interest in image classification, but almost all the current public benchmarks are focused on natural images. The few-shot paradigm is highly relevant in medical-imaging applications due to the scarcity of labeled data, as annotations are expensive and require specialized expertise. However, in medical imaging, few-shot learning research is sparse, limited to private data sets and is at its early stage. In particular, the few-shot setting is of high interest in histology due to the diversity and fine granularity of cancer related tissue classification tasks, and the variety of data-preparation techniques. This paper introduces a highly diversified public benchmark, gathered from various public datasets, for few-shot histology data classification. We build few-shot tasks and base-training data with various tissue types, different levels of domain shifts stemming from various cancer sites, and different class-granularity levels, thereby reflecting realistic scenarios. We evaluate the performances of state-of-the-art few-shot learning methods on our benchmark, and observe that simple fine-tuning and regularization methods achieve better results than the popular meta-learning and episodic-training paradigm. Furthermore, we introduce three scenarios based on the domain shifts between the source and target histology data: near-domain, middle-domain and out-domain. Our experiments display the potential of few-shot learning in histology classification, with state-of-art few shot learning methods approaching the supervised-learning baselines in the near-domain setting. In our out-domain setting, for 5-way 5-shot, the best performing method reaches 60% accuracy. We believe that our work could help in building realistic evaluations and fair comparisons of few-shot learning methods and will further encourage research in the few-shot paradigm.",
+    "authors": [
+      "Fereshteh Shakeri",
+      "Malik Boudiaf",
+      "Sina Mohammadi",
+      "Ivaxi Sheth",
+      "Mohammad Havaei",
+      "Ismail Ben Ayed",
+      "Samira Ebrahimi Kahou"
+    ],
+    "published": "2022-05-31",
+    "pdf_url": "https://arxiv.org/pdf/2206.00092v1"
+  },
+  "1911.06045v3": {
+    "title": "Self-Supervised Learning For Few-Shot Image Classification",
+    "summary": "Few-shot image classification aims to classify unseen classes with limited labelled samples. Recent works benefit from the meta-learning process with episodic tasks and can fast adapt to class from training to testing. Due to the limited number of samples for each task, the initial embedding network for meta-learning becomes an essential component and can largely affect the performance in practice. To this end, most of the existing methods highly rely on the efficient embedding network. Due to the limited labelled data, the scale of embedding network is constrained under a supervised learning(SL) manner which becomes a bottleneck of the few-shot learning methods. In this paper, we proposed to train a more generalized embedding network with self-supervised learning (SSL) which can provide robust representation for downstream tasks by learning from the data itself. We evaluate our work by extensive comparisons with previous baseline methods on two few-shot classification datasets ({\\em i.e.,} MiniImageNet and CUB) and achieve better performance over baselines. Tests on four datasets in cross-domain few-shot learning classification show that the proposed method achieves state-of-the-art results and further prove the robustness of the proposed model. Our code is available at \\hyperref[https://github.com/phecy/SSL-FEW-SHOT.]{https://github.com/phecy/SSL-FEW-SHOT.}",
+    "authors": [
+      "Da Chen",
+      "Yuefeng Chen",
+      "Yuhong Li",
+      "Feng Mao",
+      "Yuan He",
+      "Hui Xue"
+    ],
+    "published": "2019-11-14",
+    "pdf_url": "https://arxiv.org/pdf/1911.06045v3"
+  },
+  "2311.14544v1": {
+    "title": "Inferring Latent Class Statistics from Text for Robust Visual Few-Shot Learning",
+    "summary": "In the realm of few-shot learning, foundation models like CLIP have proven effective but exhibit limitations in cross-domain robustness especially in few-shot settings. Recent works add text as an extra modality to enhance the performance of these models. Most of these approaches treat text as an auxiliary modality without fully exploring its potential to elucidate the underlying class visual features distribution. In this paper, we present a novel approach that leverages text-derived statistics to predict the mean and covariance of the visual feature distribution for each class. This predictive framework enriches the latent space, yielding more robust and generalizable few-shot learning models. We demonstrate the efficacy of incorporating both mean and covariance statistics in improving few-shot classification performance across various datasets. Our method shows that we can use text to predict the mean and covariance of the distribution offering promising improvements in few-shot learning scenarios.",
+    "authors": [
+      "Yassir Bendou",
+      "Vincent Gripon",
+      "Bastien Pasdeloup",
+      "Giulia Lioi",
+      "Lukas Mauch",
+      "Fabien Cardinaux",
+      "Ghouthi Boukli Hacene"
+    ],
+    "published": "2023-11-24",
+    "pdf_url": "https://arxiv.org/pdf/2311.14544v1"
+  },
+  "2205.15014v1": {
+    "title": "Task-Prior Conditional Variational Auto-Encoder for Few-Shot Image Classification",
+    "summary": "Transductive methods always outperform inductive methods in few-shot image classification scenarios. However, the existing few-shot methods contain a latent condition: the number of samples in each class is the same, which may be unrealistic. To cope with those cases where the query shots of each class are nonuniform (i.e. nonuniform few-shot learning), we propose a Task-Prior Conditional Variational Auto-Encoder model named TP-VAE, conditioned on support shots and constrained by a task-level prior regularization. Our method obtains high performance in the more challenging nonuniform few-shot scenarios. Moreover, our method outperforms the state-of-the-art in a wide range of standard few-shot image classification scenarios. Among them, the accuracy of 1-shot increased by about 3\\%.",
+    "authors": [
+      "Zaiyun Yang"
+    ],
+    "published": "2022-05-30",
+    "pdf_url": "https://arxiv.org/pdf/2205.15014v1"
+  }
+}
